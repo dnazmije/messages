@@ -1,0 +1,26 @@
+{
+  "name": "messages",
+  "version": "1.0.0",
+  "description": "messages app",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "author": "nazmije d",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-json-db": "^2.3.0",
+    "openapi-backend": "^5.10.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

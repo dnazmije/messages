@@ -1,0 +1,13 @@
+<form #messageForm="ngForm" (ngSubmit)="sendMessage(messageForm)">
+    <mat-form-field>
+        <mat-label>Write message</mat-label>
+        <textarea matInput name="message" ngModel></textarea>
+    </mat-form-field>
+    <br />
+    <button mat-stroked-button type="submit">Send</button>
+</form>
+<br>
+<div *ngIf="messageStatus === 'sent'"  class="status">Message sent!</div>
+<div *ngIf="messageStatus === 'failed'"  class="status">Message send failed</div>
+
+

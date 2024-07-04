@@ -1,0 +1,13 @@
+.login-card {
+    width: 100%;
+    padding:16px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.invalid-text {
+    margin-top: 16px;
+    color: orange;
+}

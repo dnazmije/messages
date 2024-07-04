@@ -1,0 +1,18 @@
+<mat-card appearance="outlined" class="login-card">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <mat-form-field>
+            <input type="text" matInput name="user" placeholder="User" class="login-input" ngModel>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input type="text" matInput name="password" placeholder="Password" class="login-input" ngModel>
+        </mat-form-field>
+        <div>
+            <button type="submit" mat-stroked-button>Login</button>
+        </div>
+    </form> 
+    
+    <div *ngIf="invalidLoginText" class="invalid-text">
+        {{ invalidLoginText }}
+    </div>
+</mat-card>
